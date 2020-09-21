@@ -2,6 +2,7 @@ package org.spicord.log;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
 
 public final class LoggerImpl implements org.spicord.log.Logger {
 
@@ -148,16 +149,16 @@ public final class LoggerImpl implements org.spicord.log.Logger {
         return log.getLevel().intValue() <= Level.FINE.intValue();
     }
 
-    private String toString(Object object) {
+    private static String toString(Object object) {
         if (object == null) {
             return "null";
         }
         return object.toString();
     }
 
-    private String format(String format, Object... arguments) {
+    private static String format(String format, Object... arguments) {
         for (int i = 0; i < arguments.length; i++) {
-            format = format.replaceFirst("\\{\\}", toString(arguments[i]));
+            format = format.replaceFirst("\\{\\}", Matcher.quoteReplacement(toString(arguments[i])));
         }
         return format;
     }
