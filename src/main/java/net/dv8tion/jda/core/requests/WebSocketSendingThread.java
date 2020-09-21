@@ -25,8 +25,7 @@ import net.dv8tion.jda.core.entities.GuildVoiceState;
 import net.dv8tion.jda.core.entities.impl.JDAImpl;
 import net.dv8tion.jda.core.managers.AudioManager;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-
+import org.spicord.log.Logger;
 import java.util.Queue;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;

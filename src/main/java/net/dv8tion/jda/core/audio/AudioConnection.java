@@ -36,7 +36,7 @@ import net.dv8tion.jda.core.managers.impl.AudioManagerImpl;
 import net.dv8tion.jda.core.utils.JDALogger;
 import net.dv8tion.jda.core.utils.cache.UpstreamReference;
 import org.json.JSONObject;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 import tomp2p.opuswrapper.Opus;
 
 import java.net.*;

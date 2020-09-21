@@ -18,10 +18,9 @@ package net.dv8tion.jda.core.audio.hooks;
 
 import net.dv8tion.jda.core.audio.SpeakingMode;
 import net.dv8tion.jda.core.entities.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.EnumSet;
+import org.spicord.log.Logger;
+import org.spicord.log.LoggerFactory;
 
 public class ListenerProxy implements ConnectionListener
 {

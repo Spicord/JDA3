@@ -35,8 +35,7 @@ import okhttp3.Response;
 import org.jetbrains.annotations.Async;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import org.slf4j.Logger;
-
+import org.spicord.log.Logger;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

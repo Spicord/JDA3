@@ -21,7 +21,7 @@ import net.dv8tion.jda.annotations.ReplaceWith;
 import net.dv8tion.jda.core.entities.impl.JDAImpl;
 import net.dv8tion.jda.core.utils.JDALogger;
 import org.json.JSONObject;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 @Deprecated
 @DeprecatedSince("3.8.0")

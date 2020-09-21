@@ -21,8 +21,7 @@ import gnu.trove.map.hash.TLongObjectHashMap;
 import net.dv8tion.jda.core.utils.CacheConsumer;
 import net.dv8tion.jda.core.utils.JDALogger;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-
+import org.spicord.log.Logger;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;

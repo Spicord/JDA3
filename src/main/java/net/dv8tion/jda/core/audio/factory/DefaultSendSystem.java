@@ -18,9 +18,8 @@ package net.dv8tion.jda.core.audio.factory;
 
 import net.dv8tion.jda.core.audio.AudioConnection;
 import net.dv8tion.jda.core.utils.JDALogger;
-import org.slf4j.MDC;
-
 import javax.annotation.CheckForNull;
+import org.spicord.log.MDC;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.NoRouteToHostException;

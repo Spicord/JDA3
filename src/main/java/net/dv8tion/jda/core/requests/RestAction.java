@@ -29,8 +29,7 @@ import okhttp3.RequestBody;
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-
+import org.spicord.log.Logger;
 import java.util.concurrent.*;
 import java.util.function.BooleanSupplier;
 import java.util.function.Consumer;

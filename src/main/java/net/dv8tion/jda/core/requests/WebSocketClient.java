@@ -44,9 +44,8 @@ import net.dv8tion.jda.core.utils.SessionController;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.MDC;
-
+import org.spicord.log.Logger;
+import org.spicord.log.MDC;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

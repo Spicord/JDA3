@@ -49,7 +49,7 @@ public interface IAudioSendSystem
     void shutdown();
 
     /**
-     * Called with the internal JDA {@link org.slf4j.MDC MDC} context map.
+     * Called with the internal JDA {@link org.spicord.log.MDC MDC} context map.
      * <br>This is guaranteed to be called before {@link #start()}.
      *
      * @param contextMap

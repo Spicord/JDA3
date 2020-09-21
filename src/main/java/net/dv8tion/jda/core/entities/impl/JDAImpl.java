@@ -52,9 +52,8 @@ import net.dv8tion.jda.core.utils.concurrent.CountingThreadFactory;
 import net.dv8tion.jda.core.utils.tuple.Pair;
 import okhttp3.OkHttpClient;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.MDC;
-
+import org.spicord.log.Logger;
+import org.spicord.log.MDC;
 import javax.security.auth.login.LoginException;
 import java.util.*;
 import java.util.concurrent.*;

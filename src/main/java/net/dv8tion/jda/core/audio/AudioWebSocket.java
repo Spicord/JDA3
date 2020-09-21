@@ -32,8 +32,7 @@ import net.dv8tion.jda.core.utils.JDALogger;
 import net.dv8tion.jda.core.utils.MiscUtil;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-
+import org.spicord.log.Logger;
 import java.io.IOException;
 import java.net.*;
 import java.nio.ByteBuffer;

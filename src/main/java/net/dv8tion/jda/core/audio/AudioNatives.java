@@ -18,10 +18,9 @@ package net.dv8tion.jda.core.audio;
 
 import club.minnced.opus.util.OpusLibrary;
 import net.dv8tion.jda.core.utils.JDALogger;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
+import org.spicord.log.Logger;
+import org.spicord.log.LoggerFactory;
 
 /**
  * Controller used by JDA to ensure the native

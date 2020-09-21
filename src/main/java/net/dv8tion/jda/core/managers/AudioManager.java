@@ -27,11 +27,10 @@ import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.entities.VoiceChannel;
 import net.dv8tion.jda.core.utils.Checks;
 import net.dv8tion.jda.core.utils.JDALogger;
-import org.slf4j.Logger;
-
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.EnumSet;
+import org.spicord.log.Logger;
 
 
 /**

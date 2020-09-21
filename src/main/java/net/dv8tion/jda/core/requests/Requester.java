@@ -29,9 +29,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 import okhttp3.internal.http.HttpMethod;
 import org.jetbrains.annotations.Async;
-import org.slf4j.Logger;
-import org.slf4j.MDC;
-
+import org.spicord.log.Logger;
+import org.spicord.log.MDC;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.SocketTimeoutException;

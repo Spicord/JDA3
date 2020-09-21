@@ -34,8 +34,7 @@ import net.dv8tion.jda.core.utils.MiscUtil;
 import net.dv8tion.jda.core.utils.cache.UpstreamReference;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-
+import org.spicord.log.Logger;
 import javax.annotation.Nullable;
 import java.util.*;
 import java.util.concurrent.Future;

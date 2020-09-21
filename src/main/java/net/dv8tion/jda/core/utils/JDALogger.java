@@ -16,53 +16,23 @@
 
 package net.dv8tion.jda.core.utils;
 
-import org.apache.commons.collections4.map.CaseInsensitiveMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.Map;
+import org.spicord.log.Logger;
+import org.spicord.log.LoggerFactory;
 
 /**
  * This class serves as a LoggerFactory for JDA's internals.
- * <br>It will either return a Logger from a SLF4J implementation via {@link org.slf4j.LoggerFactory} if present,
- * or an instance of a custom {@link SimpleLogger} (From slf4j-simple).
  * <p>
  * It also has the utility method {@link #getLazyString(LazyEvaluation)} which is used to lazily construct Strings for Logging.
  */
 public class JDALogger
 {
-    /**
-     * Marks whether or not a SLF4J <code>StaticLoggerBinder</code> was found. If false, JDA will use its fallback logger.
-     * <br>This variable is initialized during static class initialization.
-     */
-    public static final boolean SLF4J_ENABLED;
-    static
-    {
-        boolean tmp = false;
-        try
-        {
-            Class.forName("org.slf4j.impl.StaticLoggerBinder");
-            tmp = true;
-        }
-        catch (ClassNotFoundException e)
-        {
-            //prints warning of missing implementation
-            LoggerFactory.getLogger(JDALogger.class);
-        }
-        SLF4J_ENABLED = tmp;
-    }
-
-    private static final Map<String, Logger> LOGS = new CaseInsensitiveMap<>();
 
     private JDALogger() {}
 
     /**
-     * Will get the {@link org.slf4j.Logger} with the given log-name
-     * or create and cache a fallback logger if there is no SLF4J implementation present.
-     * <p>
-     * The fallback logger will be an instance of a slightly modified version of SLF4Js SimpleLogger.
+     * Will get the {@link org.spicord.log.Logger} with the given log-name.
      *
      * @param  name
      *         The name of the Logger
@@ -71,19 +41,11 @@ public class JDALogger
      */
     public static Logger getLog(String name)
     {
-        synchronized (LOGS)
-        {
-            if (SLF4J_ENABLED)
-                return LoggerFactory.getLogger(name);
-            return LOGS.computeIfAbsent(name, SimpleLogger::new);
-        }
+        return LoggerFactory.getLogger(name);
     }
 
     /**
-     * Will get the {@link org.slf4j.Logger} for the given Class
-     * or create and cache a fallback logger if there is no SLF4J implementation present.
-     * <p>
-     * The fallback logger will be an instance of a slightly modified version of SLF4Js SimpleLogger.
+     * Will get the {@link org.spicord.log.Logger} for the given Class.
      *
      * @param  clazz
      *         The class used for the Logger name
@@ -92,12 +54,7 @@ public class JDALogger
      */
     public static Logger getLog(Class<?> clazz)
     {
-        synchronized (LOGS)
-        {
-            if (SLF4J_ENABLED)
-                return LoggerFactory.getLogger(clazz);
-            return LOGS.computeIfAbsent(clazz.getName(), (n) -> new SimpleLogger(clazz.getSimpleName()));
-        }
+        return LoggerFactory.getLogger(clazz);
     }
 
     /**

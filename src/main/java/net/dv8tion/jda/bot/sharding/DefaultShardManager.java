@@ -32,9 +32,8 @@ import net.dv8tion.jda.core.utils.*;
 import net.dv8tion.jda.core.utils.cache.CacheFlag;
 import net.dv8tion.jda.core.utils.tuple.Pair;
 import okhttp3.OkHttpClient;
-import org.slf4j.Logger;
-
 import javax.security.auth.login.LoginException;
+import org.spicord.log.Logger;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
