@@ -390,7 +390,7 @@ public class ChannelManager extends ManagerBase
      *
      * @return  ChannelManager for chaining convenience
      *
-     * @see     <a href="https://discordapp.com/developers/docs/topics/permissions#permission-syncing" target="_blank">Discord Documentation - Permission Syncing</a>
+     * @see     <a href="https://discord.com/developers/docs/topics/permissions#permission-syncing" target="_blank">Discord Documentation - Permission Syncing</a>
      */
     @CheckReturnValue
     public ChannelManager sync()
@@ -421,7 +421,7 @@ public class ChannelManager extends ManagerBase
      *
      * @return  ChannelManager for chaining convenience
      *
-     * @see     <a href="https://discordapp.com/developers/docs/topics/permissions#permission-syncing" target="_blank">Discord Documentation - Permission Syncing</a>
+     * @see     <a href="https://discord.com/developers/docs/topics/permissions#permission-syncing" target="_blank">Discord Documentation - Permission Syncing</a>
      */
     @CheckReturnValue
     public ChannelManager sync(Channel syncSource)

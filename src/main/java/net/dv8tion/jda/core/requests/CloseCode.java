@@ -19,7 +19,7 @@ package net.dv8tion.jda.core.requests;
 /**
  * Constants representing {@link net.dv8tion.jda.core.requests.WebSocketClient WebSocketClient} close codes
  * with association to an explaining message.
- * <br>This was inspired from the <a target="_blank" href="https://discordapp.com/developers/docs/topics/gateway#disconnections">official documentation</a>
+ * <br>This was inspired from the <a target="_blank" href="https://discord.com/developers/docs/topics/gateway#disconnections">official documentation</a>
  */
 public enum CloseCode
 {

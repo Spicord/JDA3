@@ -39,7 +39,7 @@ public interface ApplicationInfo extends ISnowflake
      * 
      * <p>This means that additional OAuth2 steps are required to authorize the application to make a bot join a guild 
      * like {@code &response_type=code} together with a valid {@code &redirect_uri}. 
-     * <br>For more information look at the <a href="https://discordapp.com/developers/docs/topics/oauth2">Discord OAuth2 documentation</a>.  
+     * <br>For more information look at the <a href="https://discord.com/developers/docs/topics/oauth2">Discord OAuth2 documentation</a>.  
      * 
      * @return Whether the bot requires code grant
      */
@@ -72,7 +72,7 @@ public interface ApplicationInfo extends ISnowflake
      * Creates a OAuth invite-link used to invite the bot.
      * 
      * <p>The link is provided in the following format:
-     * <br>{@code https://discordapp.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS}
+     * <br>{@code https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS}
      * <br>Unnecessary query parameters are stripped.
      * @param  permissions
      *         Possibly empty {@link java.util.Collection Collection} of {@link net.dv8tion.jda.core.Permission Permissions}
@@ -89,7 +89,7 @@ public interface ApplicationInfo extends ISnowflake
      * Creates a OAuth invite-link used to invite the bot.
      * 
      * <p>The link is provided in the following format:
-     * <br>{@code https://discordapp.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS}
+     * <br>{@code https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS}
      * <br>Unnecessary query parameters are stripped.
      * 
      * @param  permissions
@@ -106,7 +106,7 @@ public interface ApplicationInfo extends ISnowflake
      * Creates a OAuth invite-link used to invite the bot.
      * 
      * <p>The link is provided in the following format:
-     * <br>{@code https://discordapp.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
+     * <br>{@code https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
      * <br>Unnecessary query parameters are stripped.
      * 
      * @param  guildId
@@ -126,7 +126,7 @@ public interface ApplicationInfo extends ISnowflake
      * Creates a OAuth invite-link used to invite the bot.
      *
      * <p>The link is provided in the following format:
-     * <br>{@code https://discordapp.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
+     * <br>{@code https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
      * <br>Unnecessary query parameters are stripped.
      *
      * @param  guildId
@@ -146,7 +146,7 @@ public interface ApplicationInfo extends ISnowflake
      * Creates a OAuth invite-link used to invite the bot.
      * 
      * <p>The link is provided in the following format:
-     * <br>{@code https://discordapp.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
+     * <br>{@code https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
      * <br>Unnecessary query parameters are stripped.
      * 
      * @param  guildId 
@@ -169,7 +169,7 @@ public interface ApplicationInfo extends ISnowflake
      * Creates a OAuth invite-link used to invite the bot.
      *
      * <p>The link is provided in the following format:
-     * <br>{@code https://discordapp.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
+     * <br>{@code https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot&permissions=PERMISSIONS&guild_id=GUILD_ID}
      * <br>Unnecessary query parameters are stripped.
      *
      * @param  guildId

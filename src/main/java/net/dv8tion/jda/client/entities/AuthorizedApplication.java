@@ -30,7 +30,7 @@ import javax.annotation.CheckReturnValue;
  * @since  3.0
  * @author Aljoscha Grebe
  * 
- * @see    <a href="https://discordapp.com/developers/applications/authorized">Discord Documentation - Authorized Apps</a>
+ * @see    <a href="https://discord.com/developers/applications/authorized">Discord Documentation - Authorized Apps</a>
  * @see    net.dv8tion.jda.client.JDAClient#getAuthorizedApplications() JDAClient.getAuthorizedApplications()
  * @see    net.dv8tion.jda.client.JDAClient#getAuthorizedApplicationById(String) JDAClient.getAuthorizedApplicationById(String)
  */
@@ -99,11 +99,11 @@ public interface AuthorizedApplication extends ISnowflake
     /**
      * List of authorization scopes of this Application.
      * <br>For a complete list of valid scopes go to the
-     * <a href="https://discordapp.com/developers/docs/topics/oauth2#scopes">Official Discord Documentation</a>. 
+     * <a href="https://discord.com/developers/docs/topics/oauth2#scopes">Official Discord Documentation</a>. 
      * 
      * @return The authorisation scopes
      * 
-     * @see    <a href="https://discordapp.com/developers/docs/topics/oauth2#scopes" >List of Discord OAuth2 scopes</a>
+     * @see    <a href="https://discord.com/developers/docs/topics/oauth2#scopes" >List of Discord OAuth2 scopes</a>
      */
     List<String> getScopes();
 }

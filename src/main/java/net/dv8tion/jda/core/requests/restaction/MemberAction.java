@@ -44,7 +44,7 @@ import java.util.stream.Collectors;
  *
  * @since  3.7.0
  *
- * @see    <a href="https://discordapp.com/developers/docs/topics/oauth2" target="_blank">Discord OAuth2 Documentation</a>
+ * @see    <a href="https://discord.com/developers/docs/topics/oauth2" target="_blank">Discord OAuth2 Documentation</a>
  */
 public class MemberAction extends RestAction<Void>
 {

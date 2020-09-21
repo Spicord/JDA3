@@ -70,7 +70,7 @@ public class WebhookClientBuilder
      *
      * @param  url
      *         The URL of the webhook. May be directly copied from Discord's UI
-     *         <br>Example: {@code https://discordapp.com/api/webhooks/123456789012345678/my-webhook-token}
+     *         <br>Example: {@code https://discord.com/api/webhooks/123456789012345678/my-webhook-token}
      *         <br>This constructor also parses URLs pointing to subdomains of {@code discordapp.com}
      *
      * @throws java.lang.IllegalArgumentException

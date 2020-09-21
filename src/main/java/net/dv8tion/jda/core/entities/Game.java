@@ -59,7 +59,7 @@ public class Game
     }
 
     /**
-     * Whether this is a <a href="https://discordapp.com/developers/docs/rich-presence/best-practices" target="_blank">Rich Presence</a>
+     * Whether this is a <a href="https://discord.com/developers/docs/rich-presence/best-practices" target="_blank">Rich Presence</a>
      * <br>If {@code false} the result of {@link #asRichPresence()} is {@code null}
      *
      * @return {@code true} if this is a {@link net.dv8tion.jda.core.entities.RichPresence RichPresence}

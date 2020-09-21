@@ -56,7 +56,7 @@ import java.util.concurrent.*;
  */
 public class WebhookClient implements AutoCloseable
 {
-    public static final String WEBHOOK_URL = "https://discordapp.com/api/v6/webhooks/%s/%s";
+    public static final String WEBHOOK_URL = "https://discord.com/api/v6/webhooks/%s/%s";
     public static final String USER_AGENT = "JDA Webhook(https://github.com/DV8FromTheWorld/JDA | " + JDAInfo.VERSION + ")";
     public static final Logger LOG = JDALogger.getLog(WebhookClient.class);
 

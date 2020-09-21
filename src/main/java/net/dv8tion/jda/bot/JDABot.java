@@ -48,7 +48,7 @@ public interface JDABot
     /**
      * Creates an authorization invite url for the currently logged in Bot-Account.
      * <br>Example Format:
-     * {@code https://discordapp.com/oauth2/authorize?scope=bot&client_id=288202953599221761&permissions=8}
+     * {@code https://discord.com/oauth2/authorize?scope=bot&client_id=288202953599221761&permissions=8}
      *
      * <p><b>Hint:</b> To enable a pre-selected Guild of choice append the parameter {@code &guild_id=YOUR_GUILD_ID}
      *
@@ -63,7 +63,7 @@ public interface JDABot
     /**
      * Creates an authorization invite url for the currently logged in Bot-Account.
      * <br>Example Format:
-     * {@code https://discordapp.com/oauth2/authorize?scope=bot&client_id=288202953599221761&permissions=8}
+     * {@code https://discord.com/oauth2/authorize?scope=bot&client_id=288202953599221761&permissions=8}
      *
      * <p><b>Hint:</b> To enable a pre-selected Guild of choice append the parameter {@code &guild_id=YOUR_GUILD_ID}
      *

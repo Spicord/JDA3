@@ -57,7 +57,7 @@ public interface Emote extends ISnowflake, IMentionable, IFakeable
 
     /**
      * Roles this emote is active for
-     * <br><a href="https://discordapp.com/developers/docs/resources/guild#emoji-object" target="_blank">Learn More</a>
+     * <br><a href="https://discord.com/developers/docs/resources/guild#emoji-object" target="_blank">Learn More</a>
      *
      * @throws IllegalStateException
      *         If this Emote does not have attached roles according to {@link #canProvideRoles()}
@@ -106,7 +106,7 @@ public interface Emote extends ISnowflake, IMentionable, IFakeable
     /**
      * Whether this emote is managed. A managed Emote is controlled by Discord, not the Guild administrator, typical
      * via a service like BBTV in conjunction with Twitch.
-     * <br><a href="https://discordapp.com/developers/docs/resources/guild#emoji-object" target="_blank">Learn More</a>
+     * <br><a href="https://discord.com/developers/docs/resources/guild#emoji-object" target="_blank">Learn More</a>
      *
      * @return True, if this emote is managed
      */
@@ -187,7 +187,7 @@ public interface Emote extends ISnowflake, IMentionable, IFakeable
      *
      * @return A usable String representation for this Emote
      *
-     * @see    <a href="https://discordapp.com/developers/docs/resources/channel#message-formatting">Message Formatting</a>
+     * @see    <a href="https://discord.com/developers/docs/resources/channel#message-formatting">Message Formatting</a>
      */
     @Override
     default String getAsMention()

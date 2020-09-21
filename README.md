@@ -8,7 +8,7 @@
 [ ![version][] ][download]
 [ ![jenkins][] ](https://ci.dv8tion.net/job/JDA3-Legacy)
 [ ![license][] ](https://github.com/DV8FromTheWorld/JDA/tree/master/LICENSE)
-[ ![Discord](https://discordapp.com/api/guilds/125227483518861312/widget.png) ][discord-invite]
+[ ![Discord](https://discord.com/api/guilds/125227483518861312/widget.png) ][discord-invite]
 [ ![FAQ] ](https://github.com/DV8FromTheWorld/JDA/wiki/10\)-FAQ)
 [ ![Troubleshooting] ](https://github.com/DV8FromTheWorld/JDA/wiki/19\)-Troubleshooting)
 
@@ -19,7 +19,7 @@ JDA strives to provide a clean and full wrapping of the Discord REST api and its
 
 ## JDA 3.x
 JDA will be continued with version 3.x and will support Bot-features (for bot-accounts) and Client-features (for user-accounts).
-_Please see the [Discord docs](https://discordapp.com/developers/docs/reference) for more information about bot accounts._
+_Please see the [Discord docs](https://discord.com/developers/docs/reference) for more information about bot accounts._
 
 1. [Examples](#creating-the-jda-object)
 2. [Sharding](#sharding-a-bot)
@@ -38,7 +38,7 @@ We however still have support to login with these accounts due to legacy support
 welcome to use.
 Note that JDA is not a good tool to build a custom discord client as it loads all servers/guilds on startup unlike
 a client which does this via lazy loading instead.
-If you need a bot, use a bot account from the [Application Dashboard](https://discordapp.com/developers/applications).
+If you need a bot, use a bot account from the [Application Dashboard](https://discord.com/developers/applications).
 
 [Read More](https://support.discordapp.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-)
 
@@ -402,4 +402,4 @@ All dependencies are managed automatically by Gradle.
 - [discord.py](https://github.com/Rapptz/discord.py)
 - [serenity](https://github.com/zeyla/serenity)
 
-**See also:** https://discordapp.com/developers/docs/topics/community-resources#libraries
+**See also:** https://discord.com/developers/docs/topics/community-resources#libraries
