@@ -113,6 +113,9 @@
                                 <relocation>
                                     <pattern>org</pattern>
                                     <shadedPattern>net.dv8tion.jda.shaded.org</shadedPattern>
+                                    <excludes>
+                                        <exclude>org.spicord.log.*</exclude>
+                                    </excludes>
                                 </relocation>
                                 <relocation>
                                     <pattern>okhttp3</pattern>
