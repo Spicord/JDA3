@@ -621,6 +621,7 @@ public class WebSocketClient extends WebSocketAdapter implements WebSocketListen
         JSONObject payload = new JSONObject()
             .put("presence", presenceObj.getFullPresence())
             .put("token", getToken())
+            .put("intents", 32719)
             .put("properties", connectionProperties)
             .put("v", DISCORD_GATEWAY_VERSION)
             .put("large_threshold", 250);
