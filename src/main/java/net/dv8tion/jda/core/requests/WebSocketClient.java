@@ -621,7 +621,7 @@ public class WebSocketClient extends WebSocketAdapter implements WebSocketListen
         JSONObject payload = new JSONObject()
             .put("presence", presenceObj.getFullPresence())
             .put("token", getToken())
-            .put("intents", 32719)
+            .put("intents", getIntents())
             .put("properties", connectionProperties)
             .put("v", DISCORD_GATEWAY_VERSION)
             .put("large_threshold", 250);
@@ -643,6 +643,16 @@ public class WebSocketClient extends WebSocketAdapter implements WebSocketListen
         identifyTime = System.currentTimeMillis();
         sentAuthInfo = true;
         api.setStatus(JDA.Status.AWAITING_LOGIN_CONFIRMATION);
+    }
+
+    private int getIntents() {
+        String value = System.getProperty("spicord.jda.intents", "default");
+
+        if ("privileged".equals(value)) {
+            return 32719; // privileged
+        }
+
+        return 14029; // default
     }
 
     protected void sendResume()
